@@ -21,7 +21,7 @@
         <div class="screen">
           <div class="inputdrawer">
             <div class="subhead">to Whatsapp</div>
-            <input class="tel displayname" type="phoneinput" placeholder="0548887778" spellcheck="false" dir="auto">
+            <input class="phoneinput displayname" type="tel" placeholder="0548887778" spellcheck="false" dir="auto">
           </div>
           <div class="bottom">
             <div class="filler"></div>
@@ -36,7 +36,7 @@
 
 
     document.querySelector('.button').addEventListener('click', () => {
-      let phoneTxt = document.querySelector('.tel').value;
+      let phoneTxt = document.querySelector('.phoneinput').value;
 
       console.log(phoneTxt)
       let phonen = phoneTxt[0]=='0'?phoneTxt.substring(1,10):phoneTxt;
