@@ -34,13 +34,14 @@
 
   <script>
 
-    let phoneTxt = document.querySelector('.phoneinput');
-    console.log(phoneTxt.value)
-
-
-    let phonen = phoneTxt.value[0]=='0'?phoneTxt.value.substring(1,9):phoneTxt.value;
 
     document.querySelector('.button').addEventListener('click', () => {
+      let phoneTxt = document.querySelector('.phoneinput').value;
+
+      console.log(phoneTxt)
+      let phonen = phoneTxt[0]=='0'?phoneTxt.substring(1,10):phoneTxt;
+      console.log(phonen)
+
       window.location.href = 'whatsapp://send?phone=+972' +  phonen;
     });
 
