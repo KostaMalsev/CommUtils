@@ -42,7 +42,7 @@
       let phonen = phoneTxt[0]=='0'?phoneTxt.substring(1,10):phoneTxt;
       phonen = phonen.replaceAll('-','')
       phonen = phonen.replaceAll('+972','')
-      console.log(phonen)
+      //console.log(phonen)
 
       window.location.href = 'whatsapp://send?phone=+972' +  phonen;
     });
