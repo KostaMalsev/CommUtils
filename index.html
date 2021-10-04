@@ -38,7 +38,7 @@
     document.querySelector('.button').addEventListener('click', () => {
       let phoneTxt = document.querySelector('.phoneinput').value;
 
-      console.log(phoneTxt)
+      //console.log(phoneTxt)
       let phonen = phoneTxt[0]=='0'?phoneTxt.substring(1,10):phoneTxt;
       phonen = phonen.replaceAll('-','')
       phonen = phonen.replaceAll('+972','')
